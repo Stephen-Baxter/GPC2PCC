@@ -33,16 +33,14 @@ public:
 	short gpRightThumb[2];
 
 private:
-	std::fstream configData;
+	std::string onStartConfig;
+	std::string configData;
 
-	std::string masterConfigFile[122];
-
-	std::string tempConfigFile[122];
-	std::string tempConfigFileName;
+	std::vector<std::string> masterConfigFile;
 
 	void DisplayNotice();
-	void GetTempConfigFileName();
-	void GetTempConfigFile();
+	void GetConfigFileName();
+	void GetConfigFileData();
 	void SetGPInputs();
 
 	void CreateMasterConfigFile();
