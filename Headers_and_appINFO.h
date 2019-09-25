@@ -4,12 +4,14 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <vector>
 
 #include <Windows.h>
 #include <Xinput.h>
-#include <conio.h> //For _getch();
+#include <conio.h> //For _getch()
 
-#include "resource.h"
+#include "resource.h"'
+#include "getsetjson.h"
 
 #define PI 3.1415926535897932384626433832795
 
